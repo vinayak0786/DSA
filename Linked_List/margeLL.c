@@ -81,11 +81,12 @@ void merge(struct node *p, struct node *q)
             q = q->next;
             last->next = NULL;
         }
-        if(p!=NULL)
+        
+    }
+    if(p!=NULL)
         last->next=p;
         else
         last->next=q;
-    }
 }
 void main()
 {
